@@ -11,8 +11,8 @@ import org.springframework.context.annotation.Configuration;
 public class SportConfig {
 	
 	@Bean
-	public Coach swimCoach( FortuneService fs) {
-		SwimCoach mySwimCoach = new SwimCoach();
+	public Coach swimCoach() {
+		SwimCoach mySwimCoach = new SwimCoach(randomFortuneService());
 		
 		return mySwimCoach;
 	}

@@ -6,10 +6,15 @@ import org.springframework.stereotype.Component;
 
 //@Component
 public class SwimCoach implements Coach {
-	@Autowired
-	@Qualifier("randomFortuneService")
+	//@Autowired
+	//@Qualifier("randomFortuneService")
 	public FortuneService fs;
 	
+	public SwimCoach(FortuneService fs) {
+		
+		this.fs = fs;
+	}
+
 	@Override
 	public String getDailyWorkout() {
 		return "You should swim 200m";
