@@ -1,5 +1,8 @@
 package com.luv2code.springdemo;
 
+import org.springframework.stereotype.Component;
+
+@Component("rfs")
 public class RandomFortuneService implements FortuneService {
 
 	@Override

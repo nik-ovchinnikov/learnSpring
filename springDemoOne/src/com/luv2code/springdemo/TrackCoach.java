@@ -1,5 +1,8 @@
 package com.luv2code.springdemo;
 
+import org.springframework.stereotype.Component;
+
+@Component("thisCoachWillHelp")
 public class TrackCoach implements Coach {
 	
 	FortuneService fs;
