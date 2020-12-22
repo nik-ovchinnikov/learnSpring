@@ -2,6 +2,7 @@ package com.luv2code.springdemo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 //@Component
@@ -9,7 +10,17 @@ public class SwimCoach implements Coach {
 	//@Autowired
 	//@Qualifier("randomFortuneService")
 	public FortuneService fs;
+	@Value("${email}")
+	private String email;
 	
+	@Value("${team}")
+	private String team;
+	
+	@Override
+	public String toString() {
+		return "SwimCoach [email=" + email + ", team=" + team + "]";
+	}
+
 	public SwimCoach(FortuneService fs) {
 		
 		this.fs = fs;
