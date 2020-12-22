@@ -35,7 +35,9 @@
 
 	<bean id="myCoach2"
  		class="com.luv2code.springdemo.CricketCoach">
-		<property name="fs" ref="myFortuneService"></property> 		
+		<property name="fs" ref="myFortuneService"></property> 	
+		<property name="email" value="RomanzevOleg@fcsm.ru"></property> 	
+		<property name="team" value="Spartak Moscow"></property> 		
  	</bean>
 
     <!--
