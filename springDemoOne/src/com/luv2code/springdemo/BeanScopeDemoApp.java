@@ -10,11 +10,11 @@ public class BeanScopeDemoApp {
 				new ClassPathXmlApplicationContext("bean-scope-applicationContext2.xml");
 		
 		Coach theCoach = context.getBean("myCoach", Coach.class);
-		Coach secondCoach = context.getBean("myCoach", Coach.class);
 		
-		System.out.println(theCoach);
-		System.out.println(secondCoach);
+		//System.out.println(theCoach.getDailyWorkout());
 		
+				
+				
 		context.close();
 	}
 

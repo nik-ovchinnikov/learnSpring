@@ -2,7 +2,15 @@ package com.luv2code.springdemo;
 
 public class TrackCoach implements Coach {
 	
+	FortuneService fs;
 	
+	public void AfterCreation () {
+		System.out.println("Trainer is ready to help you!");
+	}
+
+	public void AfterDestruction () {
+		System.out.println("Trainer has gone to another pupil!");
+	}
 
 	@Override
 	public String getDailyWorkout() {
@@ -11,9 +19,15 @@ public class TrackCoach implements Coach {
 
 	@Override
 	public String getDailyFortune() {
-		
-		return "Today is a lucky day!";
+		// TODO Auto-generated method stub
+		return fs.getFortune();
 	}
+
+	public TrackCoach(FortuneService fs) {
+		this.fs = fs;
+	}
+
+	
 
 }
 

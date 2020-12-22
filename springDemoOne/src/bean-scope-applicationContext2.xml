@@ -26,7 +26,12 @@
     	</bean>
     
  	<bean id="myCoach"
- 		class="com.luv2code.springdemo.TrackCoach" scope="prototype">		
+ 		class="com.luv2code.springdemo.TrackCoach"
+	 	scope="prototype"
+		init-method="AfterCreation"
+		destroy-method="AfterDestruction">
+		
+		<constructor-arg ref="myFortuneService"></constructor-arg>		
  	</bean>
 
 	
