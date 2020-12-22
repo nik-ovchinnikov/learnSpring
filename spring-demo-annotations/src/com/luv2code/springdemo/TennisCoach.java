@@ -7,9 +7,14 @@ import org.springframework.stereotype.Component;
 public class TennisCoach implements Coach {
 	public FortuneService fs;
 	
+	
+	public TennisCoach() {
+			
+	}
+	
 	@Autowired
-	public TennisCoach(FortuneService fs) {
-			this.fs = fs;
+	public void setFs(FortuneService fs) {
+		this.fs = fs;
 	}
 
 	@Override
