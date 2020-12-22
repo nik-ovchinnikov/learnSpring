@@ -5,18 +5,9 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class TennisCoach implements Coach {
+	@Autowired
 	public FortuneService fs;
 	
-	
-	public TennisCoach() {
-			
-	}
-	
-	@Autowired
-	public void setFs(FortuneService fs) {
-		this.fs = fs;
-	}
-
 	@Override
 	public String getDailyWorkout() {
 		return "Practice to vowl awfully when you heat";
