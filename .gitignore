@@ -14,3 +14,7 @@
 /spring-demo-annotations/.project
 /spring-demo-annotations/.classpath
 
+
+/spring-demo-annotations/WebContent/WEB-INF
+
+/spring-framework-5.0.2.RELEASE-dist
