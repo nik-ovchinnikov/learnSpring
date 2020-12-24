@@ -1,3 +1,5 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,5 +15,13 @@
     ${student.lastName }
     <hr>
     ${student.countryName }
+    <hr>
+    ${student.favLang}
+    <hr>
+    <ul>
+    	<c:forEach var="temp" items="${student.opSystems }">
+    		<li> ${temp} </li>
+    	</c:forEach>
+    </ul>
     
 </html>

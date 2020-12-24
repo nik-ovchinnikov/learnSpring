@@ -23,12 +23,23 @@
 		
 		Country:  
 		<form:select path="countryName">
-			<form:option value="Russia" label="Russia"></form:option> 
-			<form:option value="Beloussia" label="Belorussia"></form:option> 
-			<form:option value="Italy" label="Italy"></form:option> 
-			<form:option value="Mongolia" label="Mongolia"></form:option> 
-			<form:option value="Sweden" label="Sweden"></form:option> 
+			<form:options items="${student.countryOptions}"></form:options> 
+			
 		</form:select>
+		
+		<br><br>
+		
+	Favourite language::  
+	 <form:radiobuttons path="favLang" items="${student.langs}"/> 
+		
+		<br><br>
+		
+	What system do you know?:  
+	 <form:checkboxes path="opSystems"  items="${student.opSystemsChoose}"/> 
+		
+		<br><br>
+		
+		
 	
 		<input type="submit" value="Submit" />
 	

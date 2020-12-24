@@ -1,5 +1,7 @@
 package com.luv2code.springdemo.mvc;
 
+import java.util.ArrayList;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -19,9 +21,6 @@ public class StudentController {
 
 	@RequestMapping("/studentInfo")
 	public String studentInfo (@ModelAttribute("student") Student theStudent) {
-		
-		
-		
 		return "student-info";
 	}
 }
