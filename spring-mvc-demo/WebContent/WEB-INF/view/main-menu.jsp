@@ -11,5 +11,7 @@
     
     <a href="hello/showForm">Hello World form</a>
     <a href="dataChangeForm">ChangeDataForm form</a>
+    
+    <a href="student/studentForm">Student</a>
 </body>
 </html>
