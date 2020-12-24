@@ -18,7 +18,8 @@ public class DataChanging {
 	@RequestMapping("/changedDataPage")
 	public String processDataChange(HttpServletRequest request, 
 			Model model,
-			@RequestParam("studentName") String name) {
+			@RequestParam("studentName") String name
+		) {
 
 		
 		//получить имя из формы
