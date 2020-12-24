@@ -10,5 +10,6 @@
     <hr>
     
     <a href="showForm">Hello World form</a>
+    <a href="dataChangeForm">ChangeDataForm form</a>
 </body>
 </html>
