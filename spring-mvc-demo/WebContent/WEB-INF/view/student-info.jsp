@@ -11,4 +11,7 @@
     ${student.firstName }
     <hr>
     ${student.lastName }
+    <hr>
+    ${student.countryName }
+    
 </html>

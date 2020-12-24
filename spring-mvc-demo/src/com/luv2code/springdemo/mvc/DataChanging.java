@@ -22,14 +22,13 @@ public class DataChanging {
 		) {
 
 		
-		//получить имя из формы
-		//String name = request.getParameter("studentName");
-		//преобразовать имя
+		
+		
 		
 		name = name.toUpperCase();
 		String result = "Yo!!! " + name;
 		
-		//записать изменённые данные в модель
+	
 		model.addAttribute("messageResult", result);
 		
 		return "changed-data";
