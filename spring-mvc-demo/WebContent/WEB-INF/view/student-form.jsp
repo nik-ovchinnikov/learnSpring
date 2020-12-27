@@ -6,6 +6,7 @@
 
 <head>
 	<title>Student Registration Form</title>
+	
 </head>
 
 <body>

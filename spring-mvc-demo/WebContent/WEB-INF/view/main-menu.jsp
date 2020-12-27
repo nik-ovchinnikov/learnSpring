@@ -13,5 +13,10 @@
     <a href="dataChangeForm">ChangeDataForm form</a>
     
     <a href="student/studentForm">Student</a>
+    
+    
+<br><br>
+    
+    <a href="customer/form">Customer</a>
 </body>
 </html>
